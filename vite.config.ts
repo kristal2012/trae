@@ -28,7 +28,6 @@ export default defineConfig({
     } : true,
   },
   preview: {
-    https: false,
     port: 4173,
   },
 })
