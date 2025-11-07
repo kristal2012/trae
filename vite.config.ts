@@ -21,14 +21,15 @@ export default defineConfig({
   server: {
     host: true,
     port: 5174,
-    hmr: tunnelHost ? {
-      protocol: 'wss',
-      clientPort: 443,
-      host: tunnelHost,
-    } : true,
+    hmr: tunnelHost
+      ? {
+          protocol: 'wss',
+          clientPort: 443,
+          host: tunnelHost,
+        }
+      : undefined,
   },
   preview: {
-    https: false,
     port: 4173,
   },
 })
