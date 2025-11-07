@@ -1,0 +1,13 @@
+# Links de túneis (2025-11-05)
+
+Cloudflare (recomendado)
+- https://matching-hawaiian-saints-rapidly.trycloudflare.com
+- Iniciar: npx cloudflared tunnel --no-tls-verify --url https://localhost:5174
+
+LocalTunnel (alternativa)
+- https://cool-donkeys-bake.loca.lt
+- Iniciar: npx localtunnel --port 5174
+
+Observações
+- Os links são temporários e podem mudar a cada execução.
+- Mantenha o dev server e o respectivo processo de túnel abertos durante os testes.

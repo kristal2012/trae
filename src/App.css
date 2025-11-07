@@ -1,0 +1,130 @@
+/* Tema espiritual: azul escuro, roxo e dourado */
+:root {
+  --bg: #0f1324;
+  --bg-soft: #131735;
+  --text: #e6e6f0;
+  --accent: #b089f7; /* roxo suave */
+  --gold: #d4af37;  /* dourado */
+  --blue: #1f2a44;
+}
+
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app {
+  color: var(--text);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, var(--gold), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.header .subtitle {
+  margin-top: 0.5rem;
+  color: #c7c7db;
+}
+
+.guidance {
+  background: linear-gradient(180deg, var(--bg-soft), var(--blue));
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+}
+.guidance h2 {
+  margin: 0 0 0.5rem;
+  color: var(--gold);
+  font-size: 1.25rem;
+}
+.guidance ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.capture {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.capture-block {
+  background: var(--bg-soft);
+  border: 1px solid rgba(176, 137, 247, 0.25);
+  border-radius: 12px;
+  padding: 1rem;
+}
+.capture-block h3 {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+}
+
+.upload {
+  display: grid;
+  place-items: center;
+  border: 2px dashed rgba(212, 175, 55, 0.35);
+  border-radius: 10px;
+  min-height: 180px;
+  color: #cfcfe2;
+  cursor: pointer;
+}
+.upload input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.preview img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid rgba(176, 137, 247, 0.25);
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+  color: #0b0e1c;
+}
+.btn.primary:disabled {
+  opacity: 0.6;
+  filter: grayscale(0.5);
+  cursor: not-allowed;
+}
+
+.btn.secondary {
+  background: #1a1f39;
+  color: var(--text);
+  border: 1px solid rgba(176, 137, 247, 0.25);
+}

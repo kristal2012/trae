@@ -1,0 +1,52 @@
+{
+  "linhas": {
+    "coracao": {
+      "presenca": "A linha do coração está presente.",
+      "ausencia": "A linha do coração não está claramente visível.",
+      "longa": "Linha do coração longa: afetividade ampla e continuada.",
+      "curta": "Linha do coração mais curta: foco afetivo pontual ou reservado.",
+      "ascendente": "Tendência ascendente: expressão afetiva otimista.",
+      "descendente": "Tendência descendente: prudência ou reservas afetivas.",
+      "bifurcada_para_jupiter": "Ramificação para Júpiter: idealização afetiva, busca por valores e sentido.",
+      "termina_em_saturno": "Terminação em Saturno: estabilidade, estrutura e compromisso nas relações.",
+      "origem_em_mercurio": "Origem em Mercúrio: comunicação e curiosidade como motor afetivo.",
+      "robusta": "Coração robusto: traço mais forte/espesso, emoções intensas e nítidas.",
+      "palida": "Coração pálido: traço mais suave/fino, sensibilidade sutil e reserva."
+    },
+    "cabeca": {
+      "presenca": "A linha da cabeça está presente.",
+      "ausencia": "A linha da cabeça não está claramente visível.",
+      "longa": "Linha da cabeça longa: raciocínio amplo e articulado.",
+      "curta": "Linha da cabeça mais curta: foco prático e direto.",
+      "diagonal": "Orientação diagonal: versatilidade mental e adaptação entre lógica e intuição.",
+      "termina_em_jupiter": "Terminação sob Júpiter: metas intelectuais elevadas, liderança e visão.",
+      "termina_em_saturno": "Terminação sob Saturno: rigor, método e paciência no pensar.",
+      "termina_em_mercurio": "Terminação sob Mercúrio: comunicação ágil, curiosidade e trocas.",
+      "ramificada": "Ramificações na cabeça: múltiplas ideias, alternativas e ramificações mentais.",
+      "robusta": "Cabeça robusta: traço forte/espesso, clareza e foco cognitivo.",
+      "palida": "Cabeça pálida: traço mais fino/suave, sensibilidade e discrição mental."
+    },
+    "vida": {
+      "presenca": "A linha da vida está presente.",
+      "ausencia": "A linha da vida não está claramente visível.",
+      "longa": "Linha da vida longa: vitalidade ampla e resistência.",
+      "curta": "Linha da vida mais curta: energia pontual ou necessidade de pausas.",
+      "origem_em_venus": "Origem em Vênus: calor afetivo, prazer sensorial e ternura vital.",
+      "robusta": "Vida robusta: traço forte/espesso, vigor e presença marcante.",
+      "palida": "Vida pálida: traço mais fino/suave, delicadeza e ritmo moderado."
+    },
+    "destino": {
+      "presenca": "A linha do destino está presente.",
+      "ausencia": "A linha do destino não está claramente visível.",
+      "longa": "Linha do destino longa: trajetória consistente e propósito nítido.",
+      "curta": "Linha do destino mais curta: ciclos e mudanças de rota.",
+      "vertical": "Orientação vertical: senso de direção e posicionamento interno.",
+      "termina_em_saturno": "Terminação sob Saturno: responsabilidade e estrutura orientando o caminho.",
+      "termina_em_mercurio": "Terminação sob Mercúrio: comunicação, negociação e mobilidade influindo na rota.",
+      "termina_em_jupiter": "Terminação sob Júpiter: expansão, ideal e visão guiando a trajetória.",
+      "ramificada": "Ramificações no destino: mudanças de rota e períodos de transição.",
+      "robusta": "Destino robusto: traço forte/espesso, senso de propósito determinante.",
+      "palida": "Destino pálido: traço mais fino/suave, flexibilidade e escuta do contexto."
+    }
+  }
+}

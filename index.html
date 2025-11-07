@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Debug overlay opcional: habilite com ?debug=1 na URL -->
+    <script>
+      (function () {
+        try {
+          var enabled = location.search.indexOf('debug=1') !== -1;
+          if (!enabled) return;
+          var wrap = document.createElement('div');
+          wrap.style.position = 'fixed';
+          wrap.style.left = '0';
+          wrap.style.bottom = '0';
+          wrap.style.maxHeight = '40vh';
+          wrap.style.width = '100%';
+          wrap.style.background = 'rgba(0,0,0,0.85)';
+          wrap.style.color = '#fff';
+          wrap.style.font = '12px/1.4 system-ui';
+          wrap.style.padding = '8px';
+          wrap.style.zIndex = '99999';
+          wrap.style.overflow = 'auto';
+          wrap.innerHTML = '<b>Debug</b> — erros e eventos serão mostrados aqui.';
+          var pre = document.createElement('pre');
+          pre.style.whiteSpace = 'pre-wrap';
+          pre.style.margin = '6px 0 0';
+          wrap.appendChild(pre);
+          function log(msg) {
+            try {
+              pre.textContent += '\n' + msg;
+            } catch {}
+          }
+          window.addEventListener('error', function (e) {
+            var msg = e.message || (e.error && e.error.message) || e.filename || 'erro desconhecido';
+            log('ERROR: ' + msg);
+          });
+          window.addEventListener('unhandledrejection', function (e) {
+            var reason = e.reason && (e.reason.message || e.reason.stack) || String(e.reason);
+            log('REJECTION: ' + reason);
+          });
+          var origLog = console.log;
+          console.log = function () {
+            try {
+              origLog.apply(console, arguments);
+              var args = Array.prototype.slice.call(arguments).map(function (a) {
+                try { return typeof a === 'string' ? a : JSON.stringify(a); } catch { return String(a); }
+              }).join(' ');
+              log('LOG: ' + args);
+            } catch {}
+          };
+          document.body.appendChild(wrap);
+        } catch {}
+      })();
+    </script>
+  </body>
+</html>
